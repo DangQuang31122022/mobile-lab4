@@ -6,11 +6,15 @@ import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import HaiA from "./screens/HaiA";
 import { PaperProvider } from "react-native-paper";
 import HaiB from "./screens/HaiB";
+import HaiC from "./screens/HaiC";
+import HaiD from "./screens/HaiD";
 
 const RootStack = createNativeStackNavigator({
   screens: {
-    HaiA: HaiA,
-    HaiB: HaiB,
+    // HaiA: HaiA,
+    // HaiB: HaiB,
+    HaiC: HaiC,
+    HaiD: HaiD,
   },
 });
 

@@ -1,3 +1,8 @@
+import {
+  NavigationProp,
+  ParamListBase,
+  useNavigation,
+} from "@react-navigation/native";
 import { useState } from "react";
 import { Image, Text, View, TextInput } from "react-native";
 import { Button, Icon } from "react-native-paper";
@@ -6,6 +11,7 @@ import StarRating from "react-native-star-rating-widget";
 export default function HaiB() {
   const [rating, setRating] = useState(5);
   const [text, setText] = useState("");
+  const navigation: NavigationProp<ParamListBase> = useNavigation();
   return (
     <View style={{ padding: 40 }}>
       <View style={{ flexDirection: "row", alignItems: "center" }}>
@@ -65,7 +71,14 @@ export default function HaiB() {
           }}
           placeholder="Hãy chi sẻ những điều mà bạn thích về sản phẩm"
         />
-        <Button mode="contained" uppercase style={{ width: "100%" }}>
+        <Button
+          mode="contained"
+          uppercase
+          style={{ width: "100%" }}
+          onPress={() => {
+            navigation.navigate("HaiC");
+          }}
+        >
           Gửi
         </Button>
       </View>
