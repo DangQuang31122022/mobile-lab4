@@ -141,6 +141,9 @@ export default function HaiC() {
             style={{ backgroundColor: "#3B3B98", borderRadius: 5 }}
             contentStyle={{}}
             labelStyle={{ color: "white" }}
+            onPress={() => {
+              navigation.navigate("HaiD");
+            }}
           >
             Generate Password
           </Button>

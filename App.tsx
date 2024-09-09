@@ -11,8 +11,8 @@ import HaiD from "./screens/HaiD";
 
 const RootStack = createNativeStackNavigator({
   screens: {
-    // HaiA: HaiA,
-    // HaiB: HaiB,
+    HaiA: HaiA,
+    HaiB: HaiB,
     HaiC: HaiC,
     HaiD: HaiD,
   },
